@@ -1,0 +1,156 @@
+
+
+/*****  Reset box model  *****/
+* {
+   box-sizing:border-box;
+   font-family:Helvetica;
+}
+
+/* ----------------------- */
+/* Elements of Main block  */
+/* ----------------------- */
+.floated-blocks {
+    padding:calc(.25rem + 1.5625vw);
+    margin-top:calc(1.5625vw);
+    margin-bottom:0;
+    margin-left:calc(1.5625vw);
+    margin-right:calc(1.5625vw);
+    border:2px solid black;
+    overflow:hidden;
+}
+.footer {
+  max-width:100%;
+  height:auto;
+  text-align:right;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:calc(1.5625vw);
+  margin-right:calc(1.5625vw);
+  background:grey;
+  border-top:0;
+  border-bottom:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+}
+
+/* ------==========--- */
+/* Elements of Section */
+/* ------------------- */
+.section-title {
+  font-size:1.25rem;
+  position:relative;
+  float:right;
+  top:-.6rem; 
+  text-align:center;
+  font-weight:bold;
+  padding:calc(1.5625vw);
+  margin: 0 0 8px calc(.5rem + 1.5625vw);
+  border:2px solid black;
+}
+.Chicken {
+  background-color:orange;
+  width:40%;
+  right:-.53rem; 
+}
+.Beef {
+  background-color:indianred;
+  color:whitesmoke;
+  width:32%;
+  right:-.56rem; 
+}
+.Sushi {
+  background-color:greenyellow;
+  width:32%;
+  right:-.56rem; 
+}
+
+/* --------------- */
+/* Body of Section */
+/* --------------- */
+.section-body {
+  max-width:100%;
+  height:auto;
+  font-weight:bold;
+  padding-top:calc(3.7rem + 1.5625vw);
+  padding-bottom:calc(.1rem + 1.5625vw);
+  padding-left:calc(.1rem + 1.5625vw);
+  padding-right:calc(.1rem + 1.5625vw);
+}
+
+/* ------------------------- */
+/* stacked columns on mobile */
+/* ------------------------- */
+
+.floated-blocks .header {
+    text-align:center ;
+    padding:1rem;
+    font-size:1.75rem;
+    font-weight:bold;
+    background:#fff;
+}
+.floated-blocks .main-content {
+    padding:.4rem;
+    margin:calc(.2rem + 1.5625vw);
+
+    border:.15rem solid black;
+    background:grey;
+}
+.floated-blocks .left-sidebar {
+    padding:.5rem;
+    margin:calc(.2rem + 1.5625vw);
+
+    border:.15rem solid black;
+    background:grey;
+}
+.floated-blocks .right-sidebar {
+    padding:.5rem;
+    margin:calc(.2rem + 1.5625vw);
+
+    border:.15rem solid black;
+    background:grey;
+}
+
+/* ----------------- */
+/* tablet breakpoint */
+/* ----------------- */
+@media (min-width:768px) and (max-width:991px) {
+
+    .floated-blocks .main-content {
+        float:left;
+        width:45%;
+        margin:calc(.28rem + 1.5625vw);
+    }
+    .floated-blocks .left-sidebar {
+        float:left;
+        width:45%;
+        background:grey;
+    }
+    .floated-blocks .right-sidebar {
+        width:96%;
+        float:right;
+        background:grey;
+    }
+}
+
+/* ------------------ */
+/* desktop breakpoint */
+/* ------------------ */
+@media (min-width:992px) {
+
+    .floated-blocks .main-content {
+        float:left;
+        width:29%;
+        background:grey;
+    }
+    .floated-blocks .left-sidebar {
+        float:left;
+        width:29%;
+        background:grey;
+    }
+    .floated-blocks .right-sidebar {
+        width:29%;
+        float:right;
+        background:grey;
+    }
+
+}
